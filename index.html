@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Budget Planner</h1>
+
+  <div class="box-wrapper">
+    <div class="input-container">
+      <div id="balance">Balance: $0.00</div>
+      <form id="transactionForm">
+        <input
+          type="text"
+          id="description"
+          placeholder="Transaction Description"
+          required
+        />
+        <input type="number" id="amount" placeholder="Amount" >
+
+        <select id="Type" required>
+          <option value="income">💸 Income</option>
+          <option value="expense">💳 Expense</option>
+        </select>
+
+        <button id="button">Enter Transaction</button>
+      </form>
+    </div>
+
+    <div class="box">
+      <h2>Transactions</h2>
+      <table id="transactionTable">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="./MyBudget.js"></script>
+    
+</body>
+</html>
+ 

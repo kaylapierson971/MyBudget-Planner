@@ -1,0 +1,99 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+
+body {
+  background: linear-gradient(to right, #a863ee, #6ca7ff);
+  padding: 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 225px;
+  padding-left: 100px;
+}
+
+.input-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+  font-size: 28px;
+  background-color: white;
+  border-radius: 25px;
+  width: 600px;
+  height: 400px;
+}
+
+#description {
+  border-radius: 25px;
+  width:250px;
+  height:30px;
+}
+
+#amount {
+  border-radius: 25px;
+  width:250px;
+  height:30px;
+}
+
+#Type {
+  border-radius: 25px;
+  width:258px;
+  height:35px;
+}
+
+#button {
+  border-radius: 25px;
+  width:258px;
+  height:40px;
+}
+
+#transactionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box {
+  background-color: white;
+  width: 600px;
+  height: 500px;
+  border-radius: 25px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  font-size: 20px;
+  border: none;
+}
+
+.income-row {
+  background-color: #d4edda; /* light green */
+}
+
+.expense-row {
+  background-color: #f8d7da; /* light red */
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #cc0000;
+}
