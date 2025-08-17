@@ -1,12 +1,13 @@
-# React + Vite
+# Budget Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Budget Plannner is a budget planner web application which is built using the React JavaScript library. This application allows users to easily track their income and expenses. The application provides an intuitive interface for managing budgets and tracking spending over time with a visual pie chart.
 
-Currently, two official plugins are available:
+## Features
+- Create and delete transactions
+- View a list of all transactions
+- User-friendly interface with responsive design
+- Pie chart tracks expenses and updates in real-time
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Example
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="556" height="450" alt="image" src="https://github.com/user-attachments/assets/8b05ddd4-fb87-4ece-91ce-409d06f5778e" />
