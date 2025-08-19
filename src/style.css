@@ -4,10 +4,12 @@
 
 body {
   background: linear-gradient(to right, #a863ee, #6ca7ff);
-  padding: 2em;
+  padding: 0 2em;
 }
 
 h1 {
+  font-family: cursive;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -16,9 +18,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 2rem;
   padding-left: 1rem;
+  height: auto;
 }
 
 .left-column {
@@ -84,14 +87,15 @@ h1 {
 }
  
 .box {  /* transaction list box */
-  flex: 1 1 350px;
+  flex: 1;
   background-color: white;
-  max-width: 600px;
-  min-width: 300px;
-  height: 500px;
   border-radius: 25px;
   text-align: center;
   overflow-y: auto;
+  min-height: 0;
+  max-height: calc(350px + 350px + 1rem); 
+  display: flex;
+  flex-direction: column;
 }
 
 .chart-card {

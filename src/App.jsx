@@ -4,15 +4,19 @@ import { Balance } from './components/Balance'
 import { TransactionForm } from './components/TransactionForm'
 import { TransactionList } from './components/TransactionList'
 import ExpenseChart from './components/ExpenseChart'; 
+import Login from './Login';
 import "./style.css"
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   const [transactions, setTransactions] = useState([]);
   const [category, setCategory] = useState('');
   const [customCategory, setCustomCategory] = useState('');
   const [amount, setAmount] = useState('');
   const [type, setType] = useState('income');
   const [balance, setBalance] = useState(0);
+  
 
   const incomeCategories = ["Salary", "Bonus", "Gift", "Investment", "Other"];
   const expenseCategories = ["Rent", "Food", "Utilities", "Entertainment", "Transportation", "Other"];
@@ -64,6 +68,10 @@ function App() {
     }
     return acc;
   }, []);
+
+  if (!loggedIn) {
+    return <Login onLogin={setLoggedIn} />;
+  }
 
 return (
   <div>
