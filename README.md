@@ -9,5 +9,4 @@ Budget Plannner is a budget planner web application which is built using the Rea
 - Pie chart tracks expenses and updates in real-time
 
 ## Example
-
-<img width="556" height="450" alt="image" src="https://github.com/user-attachments/assets/8b05ddd4-fb87-4ece-91ce-409d06f5778e" />
+<img width="598" height="442" alt="image" src="https://github.com/user-attachments/assets/326d4f3e-666c-496f-b732-06f5b6766396" />
