@@ -18,7 +18,7 @@ export default function ExpenseChart({ chartData }) {
           cy="50%"
           outerRadius={100}
           fill="#8884d8"
-          label
+          label={({ percent }) => `${(percent * 100).toFixed(1)}%`}
         >
           {chartData.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

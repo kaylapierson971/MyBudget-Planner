@@ -1,15 +1,14 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
 body {
-  background: linear-gradient(to right, #a863ee, #6ca7ff);
+  background: #f4f6f9;
   padding: 0 2em;
 }
 
 h1 {
-  font-family: cursive;
-  font-size: 35px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -41,23 +40,31 @@ h1 {
   max-width: 500px;
   min-height: 350px;
   background: white;
-  border-radius: 25px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease; 
 }
 
-#category-select, #custom-category-input, #amount, #Type {
-  border-radius: 25px;
-  width:340px;
+.input-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+input, select {
+  width: 340px;
+  border-radius: 20px;
   height:45px;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
-
 
 #button {
-  border-radius: 25px;
-  width: 100%;
-  height: 45px;
-  background: linear-gradient(90deg, #6ca7ff, #a863ee);
+  border-radius: 20px;
+  width: 340px;
+  height: 50px;
+  background: #007bff;
   color: white;
   font-weight: bold;
   border: none;
@@ -67,7 +74,7 @@ h1 {
 
 #button:hover {
   transform: scale(1.03);
-  background: linear-gradient(90deg, #5c97ff, #9853ee);
+  background: #007bff;
 }
 
 #balance {
@@ -89,18 +96,33 @@ h1 {
 .box {  /* transaction list box */
   flex: 1;
   background-color: white;
-  border-radius: 25px;
   text-align: center;
   overflow-y: auto;
   min-height: 0;
   max-height: calc(350px + 350px + 1rem); 
   display: flex;
   flex-direction: column;
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease; 
 }
 
+.box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+  
+
 .chart-card {
-  background-color: white;
-  border-radius: 25px;
+  background: white;
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease; 
+}
+
+.chart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 table {
@@ -124,7 +146,11 @@ table, th, td {
 .delete-btn {
     background: none;
     border: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     cursor: pointer;
     color: #cc0000;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
 }

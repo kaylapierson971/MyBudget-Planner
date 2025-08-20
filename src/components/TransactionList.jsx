@@ -28,7 +28,7 @@ export const TransactionList = ({
                       className="delete-btn"
                       onClick={() => handleDeleteTransaction(transaction.id)}
                     >
-                      ❌
+                      &times;
                     </button>
                   </td>
                 </tr>
